@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GalleryObject } from '../../shared/constants/constants';
+import { GalleryObject } from '../../shared/constants/constants'; 
 
 @Component({
   selector: 'app-gallery',
