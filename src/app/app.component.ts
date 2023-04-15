@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hmgu62-mukormos-idopontfoglalo';
+  title: string = 'hmgu62-mukormos-idopontfoglalo';
+
+  page = 'gallery';
+
+
+  constructor(){
+    console.log(this.title);
+  }
+
+
 }

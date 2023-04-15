@@ -1,0 +1,15 @@
+<div>
+    <select #chosenImage>
+        <option value="korom1">Csillagképek</option>
+        <option value="korom2">Tavaszi pöttyös</option>
+        <option value="korom3">Street style</option>
+        <option value="korom4">Formakavalkád</option>
+        <option value="korom5">Amerikai álom</option>
+    </select>
+
+    <div class="container">
+        <span>{{chosenImage.value}}</span>
+        <img class="galleryImage" [src]="'assets/' + chosenImage.value + '.png'" />
+        <div></div>
+    </div>
+</div>
