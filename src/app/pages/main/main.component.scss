@@ -1,7 +1,25 @@
-div{
+#kisebb{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     text-align: center;
     height: 100%;
 }
+
+#udv{
+    font-size: 24px;
+    margin: 0;
+}
+
+#nyitvatartas{
+    margin-bottom: 10px;
+}
+
+div{
+    color: green;
+}
+/*
+.main_component{
+    height: 100vh;
+}
+*/

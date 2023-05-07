@@ -1,5 +1,9 @@
-<select>
-    <option value="main">Főoldal</option>
-    <option value="gallery">Galéria</option>
-    <option value="appointment">Időpontfoglalás</option>
-</select>
+<div>
+    <select [(ngModel)]="currentPage" (change)="menuSwitch()">
+        <option value="login">Bejelentkezés</option>
+        <option value="signup">Regisztráció</option>
+        <option value="main">Főoldal</option>
+        <option value="gallery">Galéria</option>
+        <option value="appointment">Időpontfoglalás</option>
+    </select>
+</div>

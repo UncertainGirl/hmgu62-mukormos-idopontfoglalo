@@ -1,15 +1,49 @@
-<div>
-    <select #chosenImage>
-        <option value="korom1">Csillagképek</option>
+<div class="container szovegdekoralas">
+    
+    <div class="break"></div>
+    <img class="galleryImage" src="assets/korom1.png" />
+    <img class="galleryImage" src="assets/korom2.png" />
+    <div class="kiiras">
+        <p>4000.-</p>
+        <br>
+        <img class="vonalam" src="assets/vonal.png" alt="dekorvonal" />
+        <p class="nevek">Csillagképek <br> Tavaszi pöttyös</p>
+    </div>
+    <div class="break"></div>
+
+    <img class="galleryImage" src="assets/korom3.png" />
+    <div class="kiiras">
+        <p class="nevek">Street style</p>
+    </div>
+    <div class="break"></div>
+    
+    
+    <img class="galleryImage" src="assets/korom4.png" />
+    <img class="galleryImage" src="assets/korom5.png" />
+    <div  class="kiiras">
+        <p> 5000.- </p>> 
+        <br>
+        <img class="vonalam" src="assets/vonal.png" alt="dekorvonal" />
+        <p  class="nevek">Formakavalkád <br> Amerikai álom</p>
+    </div>
+    <div class="break"></div>
+</div>
+<!-- nem működik az import
+    <div class="break"></div>
+    <div>
+    <select (change)="reload()" [(ngModel)]="chosenImage">
+        <option *ngFor="let obj of galleryObject" [ngValue]="obj">{{obj.id}}</option>
         <option value="korom2">Tavaszi pöttyös</option>
         <option value="korom3">Street style</option>
         <option value="korom4">Formakavalkád</option>
         <option value="korom5">Amerikai álom</option>
     </select>
-
+-->
+    <!--
     <div class="container">
-        <span>{{chosenImage.value}}</span>
         <img class="galleryImage" [src]="'assets/' + chosenImage.value + '.png'" />
-        <div></div>
-    </div>
-</div>
+        <div class="break"></div>-->
+        <!-- <div>{{galleryObject[chosenImage.value].price}}</div> -->
+    <!--</div> -->
+
+    <!-- egyirányú: {{}} -->

@@ -20,3 +20,5 @@ export const GalleryObject = {
         'price': 5500
     }
 }
+
+//objektumok, rendezett struktúra - nem jött össze az import miatt

@@ -1,1 +1,37 @@
-<p>appointment works!</p>
+<!-- időpont foglalása -->
+
+
+<div class="break"></div>
+<div *ngIf="comments.length">
+    <table>
+        <tr>
+            <th>Felhasználó</th>
+            <th>Hozzászólás</th>
+            <th>Dátum</th>
+        </tr>
+        <tr *ngFor="let comment of comments; let i = index;" [ngStyle]="{'background-color' : i % 2 === 0 ? 'green' : '#c0e7cf'}">
+            <td>{{comment.username}}</td>
+            <td>{{comment.comment}}</td>
+            <td>{{comment.date | dateFormat}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="break"></div>
+<form [formGroup]="commentsForm" (ngSubmit)="addComment()">
+    <div><label for="username">Felhasználó: </label>
+        <!-- <input type="text" [(ngModel)]="commentObject['username']"/> -->
+        <input type="text" formControlName="username" />
+    </div>
+    <div class="break"></div>
+    <div>
+        <textarea rows="7" cols="40" formControlName="comment"></textarea>
+    </div>
+    <div class="break"></div>
+    <div>
+        <button type="submit">Hozzászólás küldése</button>
+    </div>
+</form>
+<div class="break"></div>
+<ng-content></ng-content>
+<!-- attribútum direktívák: ngModel, ngClass -->

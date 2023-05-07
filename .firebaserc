@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejl-2023-2a2c4": {
+      "hosting": {
+        "hmgu62-mukormos-idopontfoglalo": [
+          "webfejl-2023-2a2c4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejl-2023-2a2c4"
+  }
+}
