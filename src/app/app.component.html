@@ -1,19 +1,28 @@
-<!--
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
+<mat-sidenav-container>
+  <mat-sidenav>
+    <app-menu (selectedPage)="changePage($event)" [currentPage]="page" *ngIf="page"></app-menu>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <mat-toolbar color="primary">
+          <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+          </button>
+          <div>Körmös app</div>
+          <div>
+            <ul>
+              <li><a routerLink="/login">Bejelentkezés</a></li>
+              <li><a routerLink="/signup">Regisztráció</a></li>
+              <li><a routerLink="/main">Főoldal</a></li>
+              <li><a routerLink="/gallery">Galéria</a></li>
+              <li><a routerLink="/appointment">Időpontfoglalás</a></li>
+            </ul>
+          </div>
+      </mat-toolbar>
 
-  a:hover {
-    color: #125699;
-  }
--->
-
-<app-menu (selectedPage)="changePage($event)" [currentPage]="page" *ngIf="page"></app-menu>
-
+  
 <router-outlet></router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>
 <!-- *ngIf, *ngSwitch, *ngFor strukturális direktíva -->
 <!-- ng-template: input direktíva, nem léteznek a DOM-elemek - ng-container-nél se -->
 <!-- Input [], Output ()-->
